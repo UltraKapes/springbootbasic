@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../.resources/report.css" type="text/css"/><link rel="shortcut icon" href="../.resources/report.gif" type="image/gif"/><title>Rectangle.java</title><link rel="stylesheet" href="../.resources/prettify.css" type="text/css"/><script type="text/javascript" src="../.resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../.sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ultrakapes</a> &gt; <a href="index.source.html" class="el_package">com.ultrakapes.model</a> &gt; <span class="el_source">Rectangle.java</span></div><h1>Rectangle.java</h1><pre class="source lang-java linenums">package com.ultrakapes.model;
+
+public class Rectangle {
+    private int x;
+    private int y;
+    private int width;
+    private int height;
+     
+<span class="fc" id="L9">    public Rectangle(int x, int y, int width, int height) {</span>
+<span class="pc bpc" id="L10" title="2 of 4 branches missed.">        if (width &lt;= 0 || height &lt;= 0)</span>
+<span class="nc" id="L11">            throw new IllegalArgumentException(&quot;Dimensions are not positive&quot;);</span>
+         
+<span class="fc" id="L13">        this.x = x;</span>
+<span class="fc" id="L14">        this.y = y;</span>
+<span class="fc" id="L15">        this.width = width;</span>
+<span class="fc" id="L16">        this.height = height;</span>
+<span class="fc" id="L17">    }</span>
+     
+    public boolean intersects(Rectangle other) {
+<span class="fc bfc" id="L20" title="All 2 branches covered.">        if (x + width &lt;= other.x)</span>
+<span class="fc" id="L21">            return false;</span>
+<span class="fc bfc" id="L22" title="All 2 branches covered.">        if (x &gt;= other.x + other.width)</span>
+<span class="fc" id="L23">            return false;</span>
+<span class="fc bfc" id="L24" title="All 4 branches covered.">        return (y + height &gt; other.y &amp;&amp; y &lt; other.y + other.height);</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.eclemma.org/jacoco">JaCoCo</a> 0.7.1.201405082137</span></div></body></html>

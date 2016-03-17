@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ultrakapes.RectangleTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-03-17T12:31:27" hostname="abc-PC" time="0.0">
+  <properties/>
+  <testcase name="testCorner1" classname="com.ultrakapes.RectangleTestCase" time="0.0"/>
+  <testcase name="testCorner2" classname="com.ultrakapes.RectangleTestCase" time="0.0"/>
+  <testcase name="testOutside1" classname="com.ultrakapes.RectangleTestCase" time="0.0"/>
+  <testcase name="testOutside2" classname="com.ultrakapes.RectangleTestCase" time="0.0"/>
+  <testcase name="testInside1" classname="com.ultrakapes.RectangleTestCase" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
